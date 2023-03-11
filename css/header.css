@@ -1,0 +1,72 @@
+header {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Baloo Da 2', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    padding: 0 .5rem;
+}
+
+header nav a:hover {
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Odibee Sans', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* Feedback Modal */
+.modal {
+    display: flex;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+    margin: auto;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal-button {
+    margin: .5rem 0 0 0;
+    border-radius: 5px;
+    font-family: 'Baloo Da 2', sans-serif;
+    font-size: 1rem;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    text-transform: uppercase;
+}
+
+.modal textarea {
+    width: calc(100% - 2rem);
+}
