@@ -4,6 +4,7 @@
   --secondary: #00ffff;
   --background: #121212;
   --surface: rgba(255, 255, 255, 0.05);
+  --surface-highlighted: rgba(255, 255, 255, 0.10);
   --on-background: #ffffff;
   --on-surface: #ffffff;
   --on-primary: #000000;
@@ -31,12 +32,20 @@
   color: var(--on-surface);
 }
 
+.highlight-hover:hover {
+  background-color: var(--surface-highlighted);
+}
+
 .primary-text {
   color: var(--primary);
 }
 
 .secondary-text {
   color: var(--secondary);
+}
+
+.on-surface-text {
+  color: var(--on-surface);
 }
 
 .primary-border {
@@ -85,4 +94,10 @@ button {
 button:hover,
 button:focus {
   text-transform: uppercase;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 .5rem;
 }

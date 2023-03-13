@@ -1,0 +1,40 @@
+#app-cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.app-cards-item {
+  padding: .5rem;
+  display: flex;
+  background-color: var(--surface);
+}
+
+.app-card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--surface);
+}
+
+.app-card:hover {
+  text-transform: none;
+}
+
+.app-card-img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.app-card-content {
+  padding: .5rem;
+}
+
+.app-card-name {
+  margin: 0px;
+}
