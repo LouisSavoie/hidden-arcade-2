@@ -15,11 +15,11 @@ const header = () => {
         <div class="modal-content surface primary-text">
             <form action="https://formsubmit.co/75c08e43238bf34e28f52065f44fe959" method="post">
                 <label for="name">Name:</label><br>
-                <input type="text" name="name" class="surface"><br>
+                <input type="text" name="name"><br>
                 <label for="email">E-mail:</label><br>
-                <input type="email" name="email" class="surface"><br>
+                <input type="email" name="email"><br>
                 <label for="feedback">*Feedback:</label><br>
-                <textarea name="feedback" rows="5" cols="50" required class="surface"></textarea><br>
+                <textarea name="feedback" rows="5" cols="50" required></textarea><br>
                 <span>If giving feedback on a specific game, please mention it.</span><br>
                 <input type="hidden" name="_subject" value="HiddenArcade feedback">
                 <input type="hidden" name="_autoresponse" value="Thank you for your feedback on HiddenArcade, I will read it ASAP! -Louis, Creator of HiddenArcade.net">

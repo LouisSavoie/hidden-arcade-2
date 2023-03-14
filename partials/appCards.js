@@ -29,3 +29,18 @@ const appCards = () => {
   return appCardsHTML
 }
 appCardsDOM.innerHTML = appCards()
+
+// Search Bar
+function search() {
+  const input = document.getElementById('search-bar').value.toLowerCase()
+  const apps = document.getElementsByClassName('app-cards-item')
+
+  for (i = 0; i < apps.length; i++) { 
+    if (!apps[i].innerHTML.toLowerCase().includes(input)) {
+        apps[i].style.display = 'none'
+    }
+    else {
+        apps[i].style.display = 'flex'
+    }
+  } 
+}

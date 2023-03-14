@@ -38,3 +38,12 @@
 .app-card-name {
   margin: 0px;
 }
+
+/* Search Bar */
+#search-bar-container {
+  text-align: center;
+}
+
+#search-bar {
+  margin: 0 0 1rem 0;
+}
