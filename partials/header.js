@@ -10,6 +10,7 @@ const header = () => {
         <a class="secondary-text" href="https://github.com/LouisSavoie/hidden-arcade" target="_blank">GitHub</a>
         <!-- <a class="secondary-text" id="newsletter-nav-link" href="javascript:void(0)">Newsletter</a> -->
         <a class="secondary-text" id="feedback-nav-link" href="javascript:void(0)">Feedback</a>
+        <button id="data-reset-button" type="button" class="surface secondary-text secondary-border">Reset Data</button>
     </nav>
     <div id="feedback-modal" class="modal background hidden">
         <div class="modal-content surface primary-text">
@@ -24,9 +25,9 @@ const header = () => {
                 <input type="hidden" name="_subject" value="HiddenArcade feedback">
                 <input type="hidden" name="_autoresponse" value="Thank you for your feedback on HiddenArcade, I will read it ASAP! -Louis, Creator of HiddenArcade.net">
                 <input type="hidden" name="_template" value="table">
-                <button type="submit" class="modal-button surface secondary-text secondary-border">Send</button>
-                <button type="reset" class="modal-button surface secondary-text secondary-border">Reset</button>
-                <button id="close-feedback-modal-button" class="modal-button surface secondary-text secondary-border">Close</button>
+                <button type="submit" class="mt-h surface secondary-text secondary-border">Send</button>
+                <button type="reset" class="mt-h surface secondary-text secondary-border">Reset</button>
+                <button id="close-feedback-modal-button" class="mt-h surface secondary-text secondary-border">Close</button>
             </form>
         </div>
     </div>
@@ -55,3 +56,10 @@ window.onclick = function(event) {
     feedbackModal.classList.add('hidden')
   }
 }
+
+// Data
+const dataResetButton = document.querySelector('#data-reset-button')
+
+dataResetButton.addEventListener('click', function() {
+  save(template)
+})

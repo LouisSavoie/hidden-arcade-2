@@ -56,6 +56,11 @@
   border: 2px solid var(--secondary);
 }
 
+/* Style Classes */
+.mt-h {
+  margin: .5rem 0 0 0;
+}
+
 /* Utility Classes */
 .hidden {
   display: none !important;
@@ -85,7 +90,6 @@ a:hover {
 }
 
 button {
-  margin: .5rem 0 0 0;
   border-radius: 5px;
   font-family: var(--secondary-font);
   font-size: 1rem;
