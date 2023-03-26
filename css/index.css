@@ -1,3 +1,14 @@
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 .5rem;
+}
+
+input, textarea {
+  background-color: var(--surface);
+  color: var(--secondary);
+}
+
 #app-cards {
   margin: 0;
   padding: 0;
@@ -21,10 +32,6 @@
   background-color: var(--surface);
 }
 
-.app-card:hover {
-  text-transform: none;
-}
-
 .app-card-img {
   height: auto;
   max-width: 100%;
@@ -37,6 +44,8 @@
 
 .app-card-name {
   margin: 0px;
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
 }
 
 /* Search Bar */
@@ -45,5 +54,5 @@
 }
 
 #search-bar {
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }

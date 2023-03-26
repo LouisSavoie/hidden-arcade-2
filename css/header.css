@@ -1,4 +1,5 @@
 header {
+    order: 2;
     margin: 0;
     padding: .5rem;
     display: flex;
@@ -8,44 +9,14 @@ header {
     justify-content: space-around;
 }
 
-header nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-header nav a {
-    padding: 0 .5rem;
-}
-
 h1 {
-    margin: 0;
-    font-family: var(--primary-font);
-    font-size: 2.5rem;
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 2.5rem;
 }
 
-/* Feedback Modal */
-.modal {
-    display: flex;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 0; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-}
-
-.modal-content {
-    margin: auto;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.modal textarea {
-    width: calc(100% - 2rem);
+h2 {
+  margin: 0;
+  font-family: var(--primary-font);
+  font-size: 2rem;
 }

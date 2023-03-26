@@ -1,4 +1,4 @@
-/* Colors */
+/* Vars */
 :root {
   --primary: #b798ff;
   --secondary: #00ffff;
@@ -9,6 +9,8 @@
   --on-surface: #ffffff;
   --on-primary: #000000;
   --on-secondary: #000000;
+  --primary-font: 'Odibee Sans', sans-serif;
+  --secondary-font: 'Baloo Da 2', sans-serif;
 }
 
 /* Color Classes */
@@ -56,7 +58,7 @@
   border: 2px solid var(--secondary);
 }
 
-/* Style Classes */
+/* Spacing Classes */
 .mt-h {
   margin: .5rem 0 0 0;
 }
@@ -66,16 +68,17 @@
   display: none !important;
 }
 
-/* Fonts */
-:root {
-  --primary-font: 'Odibee Sans', sans-serif;
-  --secondary-font: 'Baloo Da 2', sans-serif;
+/* Text Classes */
+.upper-hover:hover {
+  text-transform: uppercase;
 }
 
-/* General */
+/* Elements */
 body {
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   background-color: var(--background);
   color: var(--on-background);
   font-family: var(--secondary-font);
@@ -85,28 +88,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-transform: uppercase;
-}
+/* Element Classes */
 
-button {
+.secondary-button {
   border-radius: 5px;
+  border: 2px solid var(--secondary);
+  background-color: var(--surface);
   font-family: var(--secondary-font);
   font-size: 1rem;
-}
-
-button:hover,
-button:focus {
-  text-transform: uppercase;
-}
-
-input, textarea {
-  background-color: var(--surface);
   color: var(--secondary);
 }
 
-main {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 .5rem;
+.secondary-button:hover {
+  text-transform: uppercase;
 }
