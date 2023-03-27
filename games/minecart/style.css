@@ -1,0 +1,230 @@
+/* all styles must be for ids or classes unique from partials */
+main {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 400px;
+  background-color: #25252a;
+  font-family: 'Boogaloo', sans-serif;
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mc-button {
+  padding: 2px 6px 0 6px;
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(189, 189, 189);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+
+#title {
+  margin: 0 0 1rem 0;
+  font-family: 'Rubik Moonrocks', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(189, 189, 189);
+}
+
+#mute-button {
+  align-self: flex-end;
+}
+
+#loot-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#block-img {
+  height: 100px;
+  width: 100px;
+}
+
+#block-win {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  object-position: 120% 0;
+}
+
+#minecart-display {
+  margin: 0 0 .5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mined-blocks-display {
+  min-height: 75px;
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-content: flex-start;
+}
+
+#minecart-button {
+  margin: 0 0 .5rem 0;
+  border: 0;
+  height: 100px;
+  width: 150px;
+  background-color: #25252a;
+}
+
+.minecart {
+  background-image: url("img/minecart.png");
+}
+
+.minecart-dump {
+  background-image: url("img/minecartDump.png");
+}
+
+#pickaxe-button {
+  margin: 0 0 .5rem 0;
+  border: 0;
+  height: 150px;
+  width: 150px;
+  background-color: #25252a;
+}
+
+.pickaxe1 {
+  background-image: url("img/pickaxe1.png");
+}
+
+.pickaxe2 {
+  background-image: url("img/pickaxe2.png");
+}
+
+.mc-input {
+  width: 100px;
+  padding: 1px 6px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#how-to-play {
+  text-align: justify;
+  color: rgb(189, 189, 189);
+}
+
+#how-to-play strong {
+  color: wheat;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+#scores-display {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  color: rgb(189, 189, 189);
+  transform: translateX(-10%);
+}
+
+#reset-scores-button {
+  margin: 0 0 1.5rem 0;
+}
+
+#achievements-heading {
+  margin: 0 0 .5rem 0;
+}
+
+#achievements-display {
+  margin: 0 0 1rem 0;
+}
+
+#reset-achievements-button {
+  margin: 0 0 2rem 0;
+}
+
+.achievement {
+  width: 200px;
+  margin: 0 0 2px 0;
+  border: 2px solid rgb(201, 171, 0);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: rgb(65, 65, 65);
+}
+
+.achievement img {
+  height: 50px;
+  width: 50px;
+  margin: 1px;
+  border: 1px solid rgb(150, 127, 0);
+  border-radius: 5px;
+  background-color: black;
+}
+
+.achievement-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.achievement p {
+  margin: 0;
+}
+
+.achievement-desc {
+  color: rgb(189, 189, 189);
+}
+
+.achievement-locked {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+#achievement-unlocked-display {
+  position: fixed;
+  top: 1rem;
+  margin: 0 auto;
+  padding: .5rem;
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.70);
+}
+
+#achievement-unlocked-display h3 {
+  margin: 0 0 .25rem 0;
+  display: inline-block;
+}
+
+#achievement-unlocked-display span {
+  float: right;
+  color: rgb(189, 189, 189);
+}
+
+.hidden {
+  display: none;
+}
+
+#info h3 {
+  margin: 0 0 .5rem 0;
+}
+
+#info p {
+  margin: 0;
+  color: rgb(189, 189, 189);
+}
+
+#info a {
+  text-decoration: none;
+  color: rgb(201, 171, 0);
+}
+
+#info a:hover {
+  text-decoration: none;
+  color: gold;
+}
