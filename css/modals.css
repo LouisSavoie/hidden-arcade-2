@@ -1,0 +1,25 @@
+
+/* Feedback Modal */
+.modal {
+  display: flex;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.modal-content {
+  margin: auto;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal textarea {
+  width: calc(100% - 2rem);
+}

@@ -1,0 +1,104 @@
+/* Vars */
+:root {
+  --primary: #b798ff;
+  --secondary: #00ffff;
+  --background: #121212;
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-highlighted: rgba(255, 255, 255, 0.10);
+  --on-background: #ffffff;
+  --on-surface: #ffffff;
+  --on-primary: #000000;
+  --on-secondary: #000000;
+  --primary-font: 'Odibee Sans', sans-serif;
+  --secondary-font: 'Baloo Da 2', sans-serif;
+}
+
+/* Color Classes */
+.primary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
+.background {
+  background-color: var(--background);
+  color: var(--on-background);
+}
+
+.surface {
+  background-color: var(--surface);
+  color: var(--on-surface);
+}
+
+.highlight-hover:hover {
+  background-color: var(--surface-highlighted);
+}
+
+.primary-text {
+  color: var(--primary);
+}
+
+.secondary-text {
+  color: var(--secondary);
+}
+
+.on-surface-text {
+  color: var(--on-surface);
+}
+
+.primary-border {
+  border: 2px solid var(--primary);
+}
+
+.secondary-border {
+  border: 2px solid var(--secondary);
+}
+
+/* Spacing Classes */
+.mt-h {
+  margin: .5rem 0 0 0;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none !important;
+}
+
+/* Text Classes */
+.upper-hover:hover {
+  text-transform: uppercase;
+}
+
+/* Elements */
+body {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--on-background);
+  font-family: var(--secondary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Element Classes */
+
+.secondary-button {
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+  background-color: var(--surface);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  color: var(--secondary);
+}
+
+.secondary-button:hover {
+  text-transform: uppercase;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-60V6Z7E54Q"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-60V6Z7E54Q');
+  </script>
+
+  <!-- SEO -->
+  <title>HiddenArcade</title>
+  <meta name="description" content="HiddenArcade - Free web games">
+  <meta name="keywords" content="hidden arcade, free games, web arcade, online arcade, web games, javascript games">
+  <meta name="author" content="Louis Savoie">
+  <link rel="canonical" href="https://www.hiddenarcade.net/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HiddenArcade">
+  <meta property="og:description" content="HiddenArcade - Free web games">
+  <meta property="og:url" content="https://www.hiddenarcade.net/">
+  <meta property="og:image" content="img/opengraph.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="HiddenArcade">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HiddenArcade">
+  <meta name="twitter:description" content="HiddenArcade - Free web games">
+  <meta name="twitter:url" content="https://www.hiddenarcade.net/">
+  <meta property="twitter:image" content="img/twittercard.webp">
+  <meta property="twitter:image:alt" content="HiddenArcade">
+  <meta name="twitter:creator" content="@LouSavoie">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.hiddenarcade.net/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.hiddenarcade.net/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.hiddenarcade.net/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://www.hiddenarcade.net/manifest.json">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Odibee+Sans&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/modals.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Local Storage -->
+  <script src="scripts/localStorage.js"></script>
+
+</head>
+<body>
+  <span id="h2-data" class="hidden">Games</span>
+  <header>
+    <script src="partials/header.js"></script>
+  </header>
+  <nav>
+    <script src="partials/nav.js"></script>
+  </nav>
+  <main>
+    <section>
+      <div id="search-bar-container">
+        <input id="search-bar" onkeyup="search()" type="text" name="search" placeholder="Search">
+      </div>
+      <ul id="app-cards">
+        <script src="partials/appCards.js"></script>
+      </ul>
+    </section>
+  </main>
+  <div id="modals">
+    <script src="partials/modals.js"></script>
+  </div>
+  <footer>
+    <script src="partials/footer.js"></script>
+  </footer>
+</body>
+</html>

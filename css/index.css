@@ -1,0 +1,58 @@
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 .5rem;
+}
+
+input, textarea {
+  background-color: var(--surface);
+  color: var(--secondary);
+}
+
+#app-cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.app-cards-item {
+  padding: .5rem;
+  display: flex;
+  background-color: var(--surface);
+}
+
+.app-card {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--surface);
+}
+
+.app-card-img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.app-card-content {
+  padding: .5rem;
+}
+
+.app-card-name {
+  margin: 0px;
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+}
+
+/* Search Bar */
+#search-bar-container {
+  text-align: center;
+}
+
+#search-bar {
+  margin: 1rem 0 1rem 0;
+}
