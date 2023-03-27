@@ -4,6 +4,7 @@ The [HiddenArcade][ha] is a catalog of web games.
 
 ## Games
 
+[Minecart](https://www.hiddenarcade.net/games/minecart)
 
 ## Adding new games
 
@@ -12,6 +13,7 @@ The [HiddenArcade][ha] is a catalog of web games.
  - copy game template files from `/dev/gametemplate/` into game directory
  - build game
  - add game info to `/partials/appCards.js` appIndex
+ - add game logo to `/img/${fileName from appIndex}.webp`
  - add game to README Games section above
  - add game page to `sitemap.xml`
 
