@@ -5,6 +5,7 @@ The [HiddenArcade][ha] is a catalog of web games.
 ## Games
 
 [Minecart](https://www.hiddenarcade.net/games/minecart)
+[Minecart Classic](https://www.hiddenarcade.net/games/minecart-classic)
 
 ## Adding new games
 
