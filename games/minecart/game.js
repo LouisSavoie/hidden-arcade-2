@@ -215,33 +215,22 @@ let currentAchievements = achievements
 let mute = false
 
 // On load
-getLocalStorage()
+loadData()
 setupDisplays()
 currentAchievements.keepMining.minedAfter = 0
 
 // Functions
-function getLocalStorage() {
-  const ls = JSON.parse(localStorage.getItem('hiddenArcade'))
-  console.log('Local storage found: ', ls)
-  if (ls.games.minecart === undefined) {
+function loadData() {
+  if (storageData.games.minecart === undefined) {
     console.log('Local storage for Minecart not found')
-    ls.games.minecart = { stats: { scores: [] }, achievements: achievements }
-    localStorage.hiddenArcade = JSON.stringify(ls)
+    saveGame('minecart', { stats: { scores: [] }, achievements: achievements })
     console.log('New local storage for Minecart created')
   } else {
     console.log('Local storage for Minecart found')
-    scores = ls.games.minecart.stats.scores
-    currentAchievements = ls.games.minecart.achievements
+    scores = storageData.games.minecart.stats.scores
+    currentAchievements = storageData.games.minecart.achievements
     console.log('Local storage for Minecart loaded')
   }
-  // if (currentAchievements.length !== achievements.length) addNewAchievements()
-}
-
-function saveLocalStorage() {
-  const ls = JSON.parse(localStorage.getItem('hiddenArcade'))
-  ls.games.minecart = { stats: { scores: scores }, achievements: currentAchievements }
-  localStorage.hiddenArcade = JSON.stringify(ls)
-  console.log('Minecart data saved to local storage')
 }
 
 function setupDisplays() {
@@ -347,12 +336,12 @@ function runLose() {
 function saveScore() {
   scores.push({ score: score, element: `<li>${initialsInput.value.toUpperCase()}: ${score}</li>` })
   scores.sort((a, b) => b.score - a.score)
-  saveLocalStorage()
+  saveGame('minecart', { stats: { scores: scores }, achievements: currentAchievements })
   scoresDisplay.innerHTML = scores.map(v => v.element).join('')
 }
 
 function updateAchievements() {
-  saveLocalStorage()
+  saveGame('minecart', { stats: { scores: scores }, achievements: currentAchievements })
   updateAchievementsDisplay()
 }
 
@@ -373,13 +362,13 @@ function resetGame() {
 
 function resetScores() {
   scores = []
-  saveLocalStorage()
+  saveGame('minecart', { stats: { scores: scores }, achievements: currentAchievements })
   scoresDisplay.innerHTML = 'No scores yet!'
 }
 
 function resetAchievements() {
   currentAchievements = achievements
-  saveLocalStorage()
+  saveGame('minecart', { stats: { scores: scores }, achievements: currentAchievements })
   updateAchievementsDisplay()
 }
 

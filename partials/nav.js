@@ -17,5 +17,5 @@ navDOM.innerHTML = nav()
 const dataResetButton = document.querySelector('#data-reset-button')
 
 dataResetButton.addEventListener('click', function() {
-  save(template)
+  saveTemplate()
 })
