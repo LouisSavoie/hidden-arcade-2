@@ -47,8 +47,6 @@ const game = () => {
 
     <button id="reset-achievements-button" class="mc-button">Reset Achievements</button>
 
-    <div id="achievement-unlocked-display" class="hidden"></div>
-
     <section id="info">
       <h3>History</h3>
       <p>When I first starting learning JavaScript I build a few small games to get a feel for the language including a game called Minecart. It was actually the first game I made so I though it was fitting to remake it as the first one in this arcade.</p>
@@ -80,7 +78,6 @@ const maxWeightDisplay = document.getElementById('max-weight-display')
 const scoreDisplay = document.getElementById('score-display')
 const scoresDisplay = document.getElementById('scores-display')
 const achievementsDisplay = document.getElementById('achievements-display')
-const achievementUnlockedDisplay = document.getElementById('achievement-unlocked-display')
 
 // Inputs
 const initialsInput = document.getElementById('initials')
@@ -373,8 +370,8 @@ function resetAchievements() {
 }
 
 function displayAchievement(achievement) {
-  achievementUnlockedDisplay.innerHTML = `<h3>Achievement Unlocked!</h3><span>&times;</span><div class="achievement"><img src="${achievement.icon}"><div class="achievement-text-container"><p>${achievement.name}</p><p class="achievement-desc">${achievement.description}</p></div></div>`
-  achievementUnlockedDisplay.classList = ''
+  achievementUnlockedDisplayDOM.innerHTML = `<h3>Achievement Unlocked!</h3><span>&times;</span><div class="achievement"><img src="${achievement.icon}"><div class="achievement-text-container"><p>${achievement.name}</p><p class="achievement-desc">${achievement.description}</p></div></div>`
+  achievementUnlockedDisplayDOM.classList = ''
   playSound('achievement')
 }
 
@@ -481,10 +478,6 @@ resetScoresButton.addEventListener('click', () => {
 
 resetAchievementsButton.addEventListener('click', () => {
   resetAchievements()
-})
-
-achievementUnlockedDisplay.addEventListener('click', () => {
-  achievementUnlockedDisplay.classList = 'hidden'
 })
 
 muteButton.addEventListener('click', () => {
